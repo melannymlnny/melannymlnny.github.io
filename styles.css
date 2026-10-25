@@ -280,6 +280,8 @@ a:focus-visible, .btn:focus-visible {
 }
 .project-intro { color: var(--muted); }
 .project ul { margin-bottom: 1.25rem; }
+.project-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.25rem; margin: 1.25rem 0 0; }
+.project-links .contact-label { width: 100%; }
 .project-note {
   margin: 0;
   padding: 0.9rem 1.1rem;
