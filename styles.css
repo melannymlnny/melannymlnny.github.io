@@ -169,23 +169,6 @@ a:focus-visible, .btn:focus-visible {
    Hero
    ================================================================ */
 .hero { padding: 3.5rem 0 3rem; }
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.85rem;
-  color: var(--accent);
-  background: var(--accent-soft);
-  border-radius: 999px;
-  padding: 0.3rem 0.9rem;
-  margin-bottom: 1.25rem;
-}
-.dot {
-  width: 0.45rem;
-  height: 0.45rem;
-  border-radius: 50%;
-  background: var(--accent);
-}
 .headline {
   font-size: 1.2rem;
   font-weight: 500;
@@ -329,7 +312,7 @@ a:focus-visible, .btn:focus-visible {
   padding: 0.9rem 1.25rem;
 }
 .contact-label { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
-.contact-list a { font-weight: 600; text-decoration: none; word-break: break-word; }
+.contact-list a { font-weight: 600; text-decoration: none; overflow-wrap: anywhere; }
 .contact-list a:hover { text-decoration: underline; }
 
 /* Footer */
@@ -353,7 +336,7 @@ a:focus-visible, .btn:focus-visible {
   .role, .project { padding: 1.75rem 2rem; }
   .role-head { flex-direction: row; justify-content: space-between; align-items: baseline; gap: 1rem; }
   .role-dates { order: 0; white-space: nowrap; }
-  .contact-list { grid-template-columns: repeat(3, 1fr); }
+  .contact-list { grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); }
 }
 
 @media (min-width: 860px) {
